@@ -1,0 +1,118 @@
+<mujoco model="dirty_table">
+  <!-- <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default> -->
+  <!-- <asset>
+    <material name="0.615686_0.811765_0.929412_0.000000_0.00000" specular="0.0" shininess="0.0" rgba="1.0 0.5 0. 1.0"/>
+  </asset> -->
+  <worldbody>
+    <body name="table" pos="0.3 -0.225 0.1">
+      <inertial pos="0.25 0.2 0.1" mass="3.0" fullinertia="0.139 0.139 0.276 0.0 0.0 0.0"/>
+      <geom name="table_0" type="box" size="0.025 0.025 0.02" pos="0.0 0.0 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_1" type="box" size="0.025 0.025 0.02" pos="0.0 0.05 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_2" type="box" size="0.025 0.025 0.02" pos="0.0 0.1 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_3" type="box" size="0.025 0.025 0.02" pos="0.0 0.15 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_4" type="box" size="0.025 0.025 0.02" pos="0.0 0.2 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_5" type="box" size="0.025 0.025 0.02" pos="0.0 0.25 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_6" type="box" size="0.025 0.025 0.02" pos="0.0 0.3 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_7" type="box" size="0.025 0.025 0.02" pos="0.0 0.35 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_8" type="box" size="0.025 0.025 0.02" pos="0.0 0.4 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_9" type="box" size="0.025 0.025 0.02" pos="0.0 0.45 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_10" type="box" size="0.025 0.025 0.02" pos="0.05 0.0 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_11" type="box" size="0.025 0.025 0.02" pos="0.05 0.05 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_12" type="box" size="0.025 0.025 0.02" pos="0.05 0.1 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_13" type="box" size="0.025 0.025 0.02" pos="0.05 0.15 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_14" type="box" size="0.025 0.025 0.02" pos="0.05 0.2 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_15" type="box" size="0.025 0.025 0.02" pos="0.05 0.25 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_16" type="box" size="0.025 0.025 0.02" pos="0.05 0.3 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_17" type="box" size="0.025 0.025 0.02" pos="0.05 0.35 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_18" type="box" size="0.025 0.025 0.02" pos="0.05 0.4 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_19" type="box" size="0.025 0.025 0.02" pos="0.05 0.45 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_20" type="box" size="0.025 0.025 0.02" pos="0.1 0.0 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_21" type="box" size="0.025 0.025 0.02" pos="0.1 0.05 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_22" type="box" size="0.025 0.025 0.02" pos="0.1 0.1 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_23" type="box" size="0.025 0.025 0.02" pos="0.1 0.15 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_24" type="box" size="0.025 0.025 0.02" pos="0.1 0.2 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_25" type="box" size="0.025 0.025 0.02" pos="0.1 0.25 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_26" type="box" size="0.025 0.025 0.02" pos="0.1 0.3 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_27" type="box" size="0.025 0.025 0.02" pos="0.1 0.35 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_28" type="box" size="0.025 0.025 0.02" pos="0.1 0.4 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_29" type="box" size="0.025 0.025 0.02" pos="0.1 0.45 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_30" type="box" size="0.025 0.025 0.02" pos="0.15 0.0 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_31" type="box" size="0.025 0.025 0.02" pos="0.15 0.05 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_32" type="box" size="0.025 0.025 0.02" pos="0.15 0.1 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_33" type="box" size="0.025 0.025 0.02" pos="0.15 0.15 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_34" type="box" size="0.025 0.025 0.02" pos="0.15 0.2 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_35" type="box" size="0.025 0.025 0.02" pos="0.15 0.25 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_36" type="box" size="0.025 0.025 0.02" pos="0.15 0.3 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_37" type="box" size="0.025 0.025 0.02" pos="0.15 0.35 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_38" type="box" size="0.025 0.025 0.02" pos="0.15 0.4 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_39" type="box" size="0.025 0.025 0.02" pos="0.15 0.45 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_40" type="box" size="0.025 0.025 0.02" pos="0.2 0.0 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_41" type="box" size="0.025 0.025 0.02" pos="0.2 0.05 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_42" type="box" size="0.025 0.025 0.02" pos="0.2 0.1 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_43" type="box" size="0.025 0.025 0.02" pos="0.2 0.15 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_44" type="box" size="0.025 0.025 0.02" pos="0.2 0.2 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_45" type="box" size="0.025 0.025 0.02" pos="0.2 0.25 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_46" type="box" size="0.025 0.025 0.02" pos="0.2 0.3 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_47" type="box" size="0.025 0.025 0.02" pos="0.2 0.35 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_48" type="box" size="0.025 0.025 0.02" pos="0.2 0.4 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_49" type="box" size="0.025 0.025 0.02" pos="0.2 0.45 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_50" type="box" size="0.025 0.025 0.02" pos="0.25 0.0 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_51" type="box" size="0.025 0.025 0.02" pos="0.25 0.05 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_52" type="box" size="0.025 0.025 0.02" pos="0.25 0.1 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_53" type="box" size="0.025 0.025 0.02" pos="0.25 0.15 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_54" type="box" size="0.025 0.025 0.02" pos="0.25 0.2 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_55" type="box" size="0.025 0.025 0.02" pos="0.25 0.25 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_56" type="box" size="0.025 0.025 0.02" pos="0.25 0.3 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_57" type="box" size="0.025 0.025 0.02" pos="0.25 0.35 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_58" type="box" size="0.025 0.025 0.02" pos="0.25 0.4 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_59" type="box" size="0.025 0.025 0.02" pos="0.25 0.45 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_60" type="box" size="0.025 0.025 0.02" pos="0.3 0.0 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_61" type="box" size="0.025 0.025 0.02" pos="0.3 0.05 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_62" type="box" size="0.025 0.025 0.02" pos="0.3 0.1 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_63" type="box" size="0.025 0.025 0.02" pos="0.3 0.15 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_64" type="box" size="0.025 0.025 0.02" pos="0.3 0.2 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_65" type="box" size="0.025 0.025 0.02" pos="0.3 0.25 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_66" type="box" size="0.025 0.025 0.02" pos="0.3 0.3 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_67" type="box" size="0.025 0.025 0.02" pos="0.3 0.35 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_68" type="box" size="0.025 0.025 0.02" pos="0.3 0.4 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_69" type="box" size="0.025 0.025 0.02" pos="0.3 0.45 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_70" type="box" size="0.025 0.025 0.02" pos="0.35 0.0 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_71" type="box" size="0.025 0.025 0.02" pos="0.35 0.05 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_72" type="box" size="0.025 0.025 0.02" pos="0.35 0.1 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_73" type="box" size="0.025 0.025 0.02" pos="0.35 0.15 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_74" type="box" size="0.025 0.025 0.02" pos="0.35 0.2 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_75" type="box" size="0.025 0.025 0.02" pos="0.35 0.25 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_76" type="box" size="0.025 0.025 0.02" pos="0.35 0.3 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_77" type="box" size="0.025 0.025 0.02" pos="0.35 0.35 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_78" type="box" size="0.025 0.025 0.02" pos="0.35 0.4 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_79" type="box" size="0.025 0.025 0.02" pos="0.35 0.45 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_80" type="box" size="0.025 0.025 0.02" pos="0.4 0.0 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_81" type="box" size="0.025 0.025 0.02" pos="0.4 0.05 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_82" type="box" size="0.025 0.025 0.02" pos="0.4 0.1 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_83" type="box" size="0.025 0.025 0.02" pos="0.4 0.15 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_84" type="box" size="0.025 0.025 0.02" pos="0.4 0.2 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_85" type="box" size="0.025 0.025 0.02" pos="0.4 0.25 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_86" type="box" size="0.025 0.025 0.02" pos="0.4 0.3 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_87" type="box" size="0.025 0.025 0.02" pos="0.4 0.35 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_88" type="box" size="0.025 0.025 0.02" pos="0.4 0.4 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_89" type="box" size="0.025 0.025 0.02" pos="0.4 0.45 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_90" type="box" size="0.025 0.025 0.02" pos="0.45 0.0 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_91" type="box" size="0.025 0.025 0.02" pos="0.45 0.05 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_92" type="box" size="0.025 0.025 0.02" pos="0.45 0.1 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_93" type="box" size="0.025 0.025 0.02" pos="0.45 0.15 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_94" type="box" size="0.025 0.025 0.02" pos="0.45 0.2 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_95" type="box" size="0.025 0.025 0.02" pos="0.45 0.25 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_96" type="box" size="0.025 0.025 0.02" pos="0.45 0.3 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_97" type="box" size="0.025 0.025 0.02" pos="0.45 0.35 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_98" type="box" size="0.025 0.025 0.02" pos="0.45 0.4 0.1" rgba="0.5 0.5 0.5 1.0"/>
+      <geom name="table_99" type="box" size="0.025 0.025 0.02" pos="0.45 0.45 0.1" rgba="0.5 0.5 0.5 1.0"/>
+  </body>
+  </worldbody>
+</mujoco>

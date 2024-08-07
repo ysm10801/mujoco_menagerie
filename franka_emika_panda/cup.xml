@@ -1,0 +1,84 @@
+<mujoco model="cup">
+  <!-- <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default> -->
+  <asset>
+    <material name="0.615686_0.811765_0.929412_0.000000_0.00000" specular="0.0" shininess="0.0" rgba="1.0 0.5 0. 1.0"/>
+    <mesh file="cup.obj"/>
+    <mesh file="cup_collision_0.obj"/>
+    <mesh file="cup_collision_1.obj"/>
+    <mesh file="cup_collision_2.obj"/>
+    <mesh file="cup_collision_3.obj"/>
+    <mesh file="cup_collision_4.obj"/>
+    <mesh file="cup_collision_5.obj"/>
+    <mesh file="cup_collision_6.obj"/>
+    <mesh file="cup_collision_7.obj"/>
+    <mesh file="cup_collision_8.obj"/>
+    <mesh file="cup_collision_9.obj"/>
+    <mesh file="cup_collision_10.obj"/>
+    <mesh file="cup_collision_11.obj"/>
+    <mesh file="cup_collision_12.obj"/>
+    <mesh file="cup_collision_13.obj"/>
+    <mesh file="cup_collision_14.obj"/>
+    <mesh file="cup_collision_15.obj"/>
+    <mesh file="cup_collision_16.obj"/>
+    <mesh file="cup_collision_17.obj"/>
+    <mesh file="cup_collision_18.obj"/>
+    <mesh file="cup_collision_19.obj"/>
+    <mesh file="cup_collision_20.obj"/>
+    <mesh file="cup_collision_21.obj"/>
+    <mesh file="cup_collision_22.obj"/>
+    <mesh file="cup_collision_23.obj"/>
+    <mesh file="cup_collision_24.obj"/>
+    <mesh file="cup_collision_25.obj"/>
+    <mesh file="cup_collision_26.obj"/>
+    <mesh file="cup_collision_27.obj"/>
+    <mesh file="cup_collision_28.obj"/>
+    <mesh file="cup_collision_29.obj"/>
+    <mesh file="cup_collision_30.obj"/>
+  </asset>
+  <worldbody>
+    <body name="cup" pos="0.3 0.3 0.06">
+      <inertial pos="0.008 0.0 -0.005" mass="0.2"
+        fullinertia="0.001 0.001 0.001 0.0 0.0 -5e-5"/>
+      <freejoint/>
+      <geom material="0.615686_0.811765_0.929412_0.000000_0.00000" mesh="cup" class="visual"/>
+      <geom name="cup_col_0" mesh="cup_collision_0" rgba="0.6715068528315747 0.8765100401084428 0.27943780681187724 1" class="collision"/>
+      <geom name="cup_col_1" mesh="cup_collision_1" rgba="0.016755239694073554 0.9343404427739651 0.5322313699011413 1" class="collision"/>
+      <geom name="cup_col_2" mesh="cup_collision_2" rgba="0.013276652770110586 0.7597496295303674 0.059222530540232965 1" class="collision"/>
+      <geom name="cup_col_3" mesh="cup_collision_3" rgba="0.849194127690675 0.48161556608362177 0.18076552213666341 1" class="collision"/>
+      <geom name="cup_col_4" mesh="cup_collision_4" rgba="0.8488853057064584 0.050494836238701546 0.15201851016397971 1" class="collision"/>
+      <geom name="cup_col_5" mesh="cup_collision_5" rgba="0.28979513421618486 0.7263521774994909 0.13882075912999225 1" class="collision"/>
+      <geom name="cup_col_6" mesh="cup_collision_6" rgba="0.38009578899574825 0.5243127105237192 0.09785819369905113 1" class="collision"/>
+      <geom name="cup_col_7" mesh="cup_collision_7" rgba="0.5849480593196213 0.636644353280682 0.18732922342168368 1" class="collision"/>
+      <geom name="cup_col_8" mesh="cup_collision_8" rgba="0.14270254305473473 0.19727922108935236 0.035639515083072726 1" class="collision"/>
+      <geom name="cup_col_9" mesh="cup_collision_9" rgba="0.23897334903957934 0.9604823581271497 0.27954658681778943 1" class="collision"/>
+      <geom name="cup_col_10" mesh="cup_collision_10" rgba="0.8580248378016164 0.43472839043997513 0.7411883334156071 1" class="collision"/>
+      <geom name="cup_col_11" mesh="cup_collision_11" rgba="0.28723192200162406 0.24644032325087706 0.6619115453480173 1" class="collision"/>
+      <geom name="cup_col_12" mesh="cup_collision_12" rgba="0.9898783850296269 0.3356854776136373 0.3449787085384829 1" class="collision"/>
+      <geom name="cup_col_13" mesh="cup_collision_13" rgba="0.48732340372307026 0.3400648745349606 0.9717923744932379 1" class="collision"/>
+      <geom name="cup_col_14" mesh="cup_collision_14" rgba="0.12940900272191858 0.17257675237388048 0.9663953483441698 1" class="collision"/>
+      <geom name="cup_col_15" mesh="cup_collision_15" rgba="0.8113212185054002 0.5968234785471236 0.809736164548407 1" class="collision"/>
+      <geom name="cup_col_16" mesh="cup_collision_16" rgba="0.948547782118674 0.930752214942757 0.545554717163341 1" class="collision"/>
+      <geom name="cup_col_17" mesh="cup_collision_17" rgba="0.892394019019802 0.7781757024664728 0.35595935915656784 1" class="collision"/>
+      <geom name="cup_col_18" mesh="cup_collision_18" rgba="0.31449187851602767 0.1526387900508187 0.3401549090344348 1" class="collision"/>
+      <geom name="cup_col_19" mesh="cup_collision_19" rgba="0.25502918111942463 0.8043983938105846 0.10325907637926246 1" class="collision"/>
+      <geom name="cup_col_20" mesh="cup_collision_20" rgba="0.3636244065601526 0.25892960175700364 0.14628547974322004 1" class="collision"/>
+      <geom name="cup_col_21" mesh="cup_collision_21" rgba="0.928918244883827 0.3355413280192958 0.7734560978976258 1" class="collision"/>
+      <geom name="cup_col_22" mesh="cup_collision_22" rgba="0.9428023705801282 0.21491096042507585 0.03818663913847109 1" class="collision"/>
+      <geom name="cup_col_23" mesh="cup_collision_23" rgba="0.4852355958247566 0.7524671804693595 0.6704481984496091 1" class="collision"/>
+      <geom name="cup_col_24" mesh="cup_collision_24" rgba="0.2649807230397314 0.28861751923081347 0.930157359176433 1" class="collision"/>
+      <geom name="cup_col_25" mesh="cup_collision_25" rgba="0.025290495774870414 0.5970088565488268 0.5595872401673205 1" class="collision"/>
+      <geom name="cup_col_26" mesh="cup_collision_26" rgba="0.1295208556194991 0.21390595079070074 0.9784416760437448 1" class="collision"/>
+      <geom name="cup_col_27" mesh="cup_collision_27" rgba="0.4202033355800877 0.9343938931686048 0.8326612976413126 1" class="collision"/>
+      <geom name="cup_col_28" mesh="cup_collision_28" rgba="0.196816569958018 0.8105573058616782 0.5871889456177959 1" class="collision"/>
+      <geom name="cup_col_29" mesh="cup_collision_29" rgba="0.5867618829136376 0.9338876162251832 0.21455082346931642 1" class="collision"/>
+      <geom name="cup_col_30" mesh="cup_collision_30" rgba="0.9788642183509061 0.32732522249377605 0.001493648010122972 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

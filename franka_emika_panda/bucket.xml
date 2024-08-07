@@ -1,0 +1,48 @@
+<mujoco model="bucket">
+  <!-- <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default> -->
+  <asset>
+    <material name="0.615686_0.811765_0.929412_0.000000_0.000000" specular="0.0" shininess="0.0" rgba="0.8 0.9 0.9 1.0"/>
+    <mesh file="bucket.obj"/>
+    <mesh file="bucket_collision_0.obj"/>
+    <mesh file="bucket_collision_1.obj"/>
+    <mesh file="bucket_collision_2.obj"/>
+    <mesh file="bucket_collision_3.obj"/>
+    <mesh file="bucket_collision_4.obj"/>
+    <mesh file="bucket_collision_5.obj"/>
+    <mesh file="bucket_collision_6.obj"/>
+    <mesh file="bucket_collision_7.obj"/>
+    <mesh file="bucket_collision_8.obj"/>
+    <mesh file="bucket_collision_9.obj"/>
+    <mesh file="bucket_collision_10.obj"/>
+    <mesh file="bucket_collision_11.obj"/>
+    <mesh file="bucket_collision_12.obj"/>
+  </asset>
+  <worldbody>
+    <body name="bucket" pos="0.3 -0.3 0.0">
+      <inertial pos="0.0 0.0 0.074" mass="1.0"
+        fullinertia="0.073 0.044 0.099 0.0 0.0 0.0"/>
+      <freejoint/>
+      <geom material="0.615686_0.811765_0.929412_0.000000_0.000000" mesh="bucket" class="visual"/>
+      <geom name="bucket_col_0" mesh="bucket_collision_0" rgba="0.8249282579077267 0.15762376798704525 0.6538264202432827 1" class="collision"/>
+      <geom name="bucket_col_1" mesh="bucket_collision_1" rgba="0.6827466861398804 0.896268579726999 0.4822704752668483 1" class="collision"/>
+      <geom name="bucket_col_2" mesh="bucket_collision_2" rgba="0.584189877843041 0.17022316436594376 0.738842585584954 1" class="collision"/>
+      <geom name="bucket_col_3" mesh="bucket_collision_3" rgba="0.009990745066804196 0.9550502672836646 0.5888020736775097 1" class="collision"/>
+      <geom name="bucket_col_4" mesh="bucket_collision_4" rgba="0.02506827161005709 0.8522361304518492 0.41577627581484733 1" class="collision"/>
+      <geom name="bucket_b_col_5" mesh="bucket_collision_5" rgba="0.7520804541001267 0.8328374818493562 0.5218435999194657 1" class="collision"/>
+      <geom name="bucket_b_col_6" mesh="bucket_collision_6" rgba="0.6209480217165397 0.21414589224161973 0.25093188767463837 1" class="collision"/>
+      <geom name="bucket_col_7" mesh="bucket_collision_7" rgba="0.052607682402363354 0.10327467879401453 0.4127182670139731 1" class="collision"/>
+      <geom name="bucket_b_col_8" mesh="bucket_collision_8" rgba="0.5612692798655936 0.42814787262675547 0.4236628153679415 1" class="collision"/>
+      <geom name="bucket_col_9" mesh="bucket_collision_9" rgba="0.2819815002601306 0.5582644762694388 0.664824327084998 1" class="collision"/>
+      <geom name="bucket_col_10" mesh="bucket_collision_10" rgba="0.638818487354521 0.6485104037646133 0.507831867568061 1" class="collision"/>
+      <geom name="bucket_col_11" mesh="bucket_collision_11" rgba="0.8028646269302568 0.34262563606772123 0.7655750432876075 1" class="collision"/>
+      <geom name="bucket_col_12" mesh="bucket_collision_12" rgba="0.5729887477148071 0.12532491703996962 0.04969916992941348 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

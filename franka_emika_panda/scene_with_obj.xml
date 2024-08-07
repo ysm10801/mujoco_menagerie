@@ -1,0 +1,67 @@
+<mujoco model="panda scene">
+  <compiler angle="radian" meshdir="assets" autolimits="true"/>
+
+  <include file="panda.xml"/>
+  <option integrator="implicitfast" timestep="0.002" cone="elliptic" noslip_iterations="3" impratio="10">
+    <flag multiccd="enable"/>
+  </option>
+  <statistic center="0.3 0 0.4" extent="1"/>
+
+  <default>
+    <default class="panda">
+      <material specular="0.5" shininess="0.25"/>
+      <joint armature="0.1" damping="1" axis="0 0 1" range="-2.8973 2.8973"/>
+      <!-- <general dyntype="none" biastype="affine" ctrlrange="-2.8973 2.8973" forcerange="-87 87"/> -->
+      <default class="finger">
+        <joint axis="0 1 0" type="slide"/>
+      </default>
+
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+      </default>
+      <default class="collision">
+        <geom type="mesh" group="3" friction="0.3 0.01 0.01" condim="6" solref="0.001 0.999" solimp="0.9 0.95 0.1 0.5 5"/>
+        <default class="fingertip_pad_collision_1">
+          <geom type="box" size="0.0085 0.004 0.0085" pos="0 0.0055 0.0445"/>
+        </default>
+        <default class="fingertip_pad_collision_2">
+          <geom type="box" size="0.003 0.002 0.003" pos="0.0055 0.002 0.05"/>
+        </default>
+        <default class="fingertip_pad_collision_3">
+          <geom type="box" size="0.003 0.002 0.003" pos="-0.0055 0.002 0.05"/>
+        </default>
+        <default class="fingertip_pad_collision_4">
+          <geom type="box" size="0.003 0.002 0.0035" pos="0.0055 0.002 0.0395"/>
+        </default>
+        <default class="fingertip_pad_collision_5">
+          <geom type="box" size="0.003 0.002 0.0035" pos="-0.0055 0.002 0.0395"/>
+        </default>
+      </default>
+    </default>
+  </default>
+
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <global azimuth="120" elevation="-20"/>
+  </visual>
+
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3"
+      markrgb="0.8 0.8 0.8" width="300" height="300"/>
+    <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+  </asset>
+
+  <worldbody>
+    <light pos="0 0 1.5" dir="0 0 -1" directional="true"/>
+    <geom name="floor" size="0 0 0.05" type="plane" material="groundplane"/>
+    <camera name="world_cam" resolution="640 480" mode="fixed" pos="1.7 -0.45 0.7" quat="0.5720614 0.41562694 0.41562694 0.5720614" />
+  </worldbody>
+
+  <include file="cup.xml"/>
+  <include file="bucket.xml"/>
+  <!-- <include file="table.xml"/> -->
+  <!-- <include file="defobj.xml"/> -->
+
+</mujoco>

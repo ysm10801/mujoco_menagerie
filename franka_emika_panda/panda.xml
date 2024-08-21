@@ -222,7 +222,7 @@
                         <joint name="finger_joint1" range="0.04 0.0" class="finger"/>
                         <geom mesh="finger_0" material="off_white" class="visual"/>
                         <geom mesh="finger_1" material="black" class="visual"/>
-                        <geom mesh="finger_0" class="collision"/>
+                        <geom name="panda_left_finger" mesh="finger_0" class="collision"/>
                         <geom class="fingertip_pad_collision_1"/>
                         <geom class="fingertip_pad_collision_2"/>
                         <geom class="fingertip_pad_collision_3"/>
@@ -236,7 +236,7 @@
                         <joint name="finger_joint2" range="0.04 0.0" class="finger"/>
                         <geom mesh="finger_0" material="off_white" class="visual"/>
                         <geom mesh="finger_1" material="black" class="visual"/>
-                        <geom mesh="finger_0" class="collision"/>
+                        <geom name="panda_right_finger" mesh="finger_0" class="collision"/>
                         <geom class="fingertip_pad_collision_1"/>
                         <geom class="fingertip_pad_collision_2"/>
                         <geom class="fingertip_pad_collision_3"/>
